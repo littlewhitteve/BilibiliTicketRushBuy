@@ -5,9 +5,9 @@ from selenium import webdriver
 
 # now = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S.%f')
 
-TargetTime = "2023-04-16 16:39:00.00000000"     #设置抢购时间
+TargetTime = "2023-04-28 19:00:00.00000000"     #设置抢购时间
 WebDriver = webdriver.Chrome()
-WebDriver.get("https://show.bilibili.com/platform/detail.html?id=71212&from=pc_ticketlist")   #输入目标购买页面
+WebDriver.get("https://show.bilibili.com/platform/detail.html?id=72320&from=pc_search")   #输入目标购买页面
 time.sleep(1)
 print("进入购票页面成功")
 WebDriver.find_element(By.CLASS_NAME, "nav-header-register").click()
